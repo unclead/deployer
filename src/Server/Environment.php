@@ -174,4 +174,14 @@ class Environment
     {
         return isset($matches[1]) ? $this->get($matches[1]) : null;
     }
+
+    /**
+     * Returns all environment variables.
+     * 
+     * @return DotArray
+     */
+    public function all()
+    {
+        return $this->values;
+    }
 }
